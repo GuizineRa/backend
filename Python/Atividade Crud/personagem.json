@@ -1,0 +1,40 @@
+{
+    "dps": [
+        {
+            "nome": "magia",
+            "tipo": "dive"
+        },
+        {
+            "nome": "demolidor",
+            "tipo": "dive"
+        },
+        {
+            "nome": "namor top",
+            "tipo": "dive"
+        },
+        {
+            "nome": "homem-aranha",
+            "tipo": "dive"
+        }
+    ],
+    "tanques": [
+        {
+            "nome": "magneto",
+            "tipo": "controlador"
+        },
+        {
+            "nome": "venom",
+            "tipo": "dive"
+        }
+    ],
+    "suportes": [
+        {
+            "nome": "mulher invisível",
+            "tipo": "controlador"
+        },
+        {
+            "nome": "cloak and dagger",
+            "tipo": "anti-dive"
+        }
+    ]
+}
