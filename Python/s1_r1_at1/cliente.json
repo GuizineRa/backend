@@ -1,0 +1,30 @@
+{ 
+    "clientes": [
+        {
+            "nome": "Jorjão",
+            "Idade": "6767",
+            "email": "jorjao67@gmail.com",
+            "cpf": "6791067810",
+            "contato": {"telefone": "(15)12345-13456", "email": "jorjao@gmail.com"},
+            "cep": "14180-290",
+            "id": "67",
+            "ativo": true,
+            "Tipo-sanguínio": "O negativo",
+            "data-nasc": "09/04/1979"
+            
+            
+        }
+    ],
+    "pedidos": [
+        {
+            "nome": "Playstation 5 SLIM",
+            "estoque": "150",
+            "preço": "4200,00",
+            "CEP": "13560-677",
+            "destribuidora": "SEDEX",
+            "data entrega": "22/02/2022",
+            ""
+            
+        }
+    ]
+}

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cadastro</title>
+</head>
+<body>
+    <form  method="post">
+        <label>Nome: </label>
+        <input type="text" name="nome" id="nome"><br>
+        <label>E-mail: </label>
+        <input type="email" name="email" id="email"><br>
+        <input type="submit" value="enviar">
+    </form>
+
+    <?php
+    function exibirCampo($label, $valor) {
+        echo "$label : $valor <br>";
+        }
+        
+        if (isset($_POST["nome"], $_POST["email"])){
+            exibirCampo("nome: ", $_POST["nome"]);
+            exibirCampo("Email: ", $_POST["email"]);
+        }
+    ?>
+
+</body>
+</html>
