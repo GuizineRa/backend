@@ -1,3 +1,14 @@
+<?php
+
+session_start();
+
+if (!isset($_SESSION["usuario"])) {
+    header("Location: login.html");
+    exit;
+}
+
+?>
+
 <!DOCTYPE html>
 <html lang="pt-BR">
 
@@ -7,7 +18,7 @@
 
     <title>Steam - Catálogo</title>
 
-    <link rel="stylesheet" href="../CSS/home.css">
+    <link rel="stylesheet" href="../CSS/index.css">
 
     <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
@@ -17,7 +28,7 @@
     <header>
 
         <div class="header-logo">
-            <img src="../IMG/Design sem nome.svg" alt="Steam Logo" class="logo">
+            <img src="../IMG/stam-logooooooooo.jpg" alt="Steam Logo" class="logo">
         </div>
 
         <div class="header-title">
@@ -30,20 +41,20 @@
 
         <div class="menu-esquerda">
 
-            <a href="#">Catálogo</a>
-            <a href="#">Perfil</a>
-            <a href="#">Biblioteca</a>
+            <a href="index.php">Catálogo</a>
+            <a href="perfil.php">Perfil</a>
 
         </div>
 
         <div class="menu-direita">
 
-            <span>Nome user</span>
+            <span>
+                <?php echo $_SESSION["usuario"]; ?>
+            </span>
 
             <input
                 type="text"
-                placeholder="Pesquisar jogos..."
-            >
+                placeholder="Pesquisar jogos...">
 
             <button>🔍</button>
 
@@ -59,9 +70,16 @@
 
         <section class="jogos-grid">
 
-            <div class="jogo-card"></div>
-            <div class="jogo-card"></div>
-            <div class="jogo-card"></div>
+            <a href="#">
+                <img src="../IMG/Cuphead_capa.png" class="jogo-card cuphead">
+            </a>
+            <a href="#">
+                <img src="../IMG/fnaf.webp" class="jogo-card">
+            </a>
+            <a href="#">
+                <img src="../IMG/hollow-knight.jpg" class="jogo-card">
+            </a>
+
 
         </section>
 
@@ -72,8 +90,7 @@
         <img
             src="../IMG/Design sem nome.svg"
             alt="Steam Logo"
-            class="footer-logo"
-        >
+            class="footer-logo">
 
     </footer>
 

@@ -1,0 +1,58 @@
+/* ==================== FORMULÁRIO DE LOGIN ==================== */
+
+/* Configura o formulário para empilhar os elementos verticalmente */
+form[action="login.php"] {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;          /* Espaço entre Email e Senha */
+    text-align: left;   /* Alinha as labels para a esquerda */
+}
+
+/* Estilização das etiquetas (Email e Senha) */
+form[action="login.php"] label {
+    color: #b9b1b1;
+    font-size: 14px;
+    margin-bottom: -5px; /* Deixa a label coladinha no input */
+    font-family: Arial, sans-serif;
+}
+
+/* Estilização dos campos de texto (Inputs) */
+form[action="login.php"] input {
+    width: 100%;
+    height: 45px;
+    border: none;
+    border-radius: 6px;
+    padding: 0 15px;
+    background: #625858; /* Cinza escuro padrão */
+    color: #ffffff;      /* Texto digitado fica branco */
+    font-size: 16px;
+    transition: background 0.2s;
+}
+
+/* Efeito quando o usuário clica para digitar */
+form[action="login.php"] input:focus {
+    outline: none;
+    background: #6e6363;
+    box-shadow: 0 0 5px rgba(255, 255, 255, 0.2);
+}
+
+/* Botão "Entrar" */
+form[action="login.php"] button[type="submit"] {
+    width: 220px;
+    height: 50px;
+    margin: 25px auto 0 auto; /* Centraliza o botão na caixinha */
+    border: none;
+    border-radius: 8px;
+    background: #838383;       /* Cinza do botão */
+    color: #ffffff;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background 0.2s;
+}
+
+/* Efeito de passar o mouse no botão */
+form[action="login.php"] button[type="submit"]:hover {
+    background: #989898;
+}

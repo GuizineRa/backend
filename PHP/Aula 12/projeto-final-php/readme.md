@@ -19,6 +19,42 @@ O projeto tem como objetivo aplicar os conceitos de desenvolvimento web estudado
 A STEAM permite que usuários criem uma conta, realizem autenticação e acessem um catálogo de jogos disponível, no qual o usuário pode baixar/instalar jogos, apenas para usuários cadastrados.
 
 ---
+# 2.1 Como utilizar
+
+## 1. Clonar o repositório
+
+Primeiro, clone o repositório do projeto.
+
+No GitHub, clique no botão verde **Code**, selecione a opção **HTTPS** e copie o link.
+
+Abra o terminal do VS Code na pasta onde deseja salvar o projeto e execute:
+git clone URL-copiada
+
+* Após isso você digita o seguinte comando: git clone [URL-copiada], fazendo com que o meu repositório seja clonado para o seu PC
+
+## 2. Banco de dados
+* Após isso você deve criar o banco de dados, para isso vc deve ter instalado o postgreSQL em seu computador, Digite no BD, CREATE DATABASE e coloque o nome do seu banco (Selecione e aperte "Run query"),
+```sql
+CREATE TABLE usuarios (
+    id SERIAL PRIMARY KEY,
+    nome VARCHAR(100) NOT NULL,
+    email VARCHAR(150) UNIQUE NOT NULL,
+    senha VARCHAR(255) NOT NULL
+); 
+```
+(Selecione e aperte "Run query").
+
+Após isso acesse PHP/conexao.php e altere as informações abaixo:
+* $host = "localhost";
+* $porta = "5432";
+* $banco = "steam";
+* $usuario = "postgres";
+* $senha = "sua_senha";
+Substitua sua_Senha pela senha configurada no postgreSQL.
+
+Inicine o servidor PHP e abra o navegador
+
+
 
 # 3. Escopo
 
@@ -44,9 +80,8 @@ O sistema será composto por duas áreas principais.
 - PHP 8+
 - postgreSQL
 - PDO
-- HTML5
-- CSS3
-- JavaScript
+- HTML
+- CSS
 - Git
 
 ---
@@ -193,44 +228,30 @@ CREATE TABLE usuarios (
 );
 ```
 
-## Tabela jogos
-
-```sql
-CREATE TABLE jogos (
-    id SERIAL PRIMARY KEY,
-    titulo VARCHAR(150) NOT NULL,
-    genero VARCHAR(50) NOT NULL,
-    desenvolvedora VARCHAR(100) NOT NULL,
-    ano_lancamento INTEGER,
-    descricao TEXT,
-    imagem TEXT
-);
-```
-
 ---
 
 # 11. Estrutura de Arquivos
 
 ```text
-gamevault/
-│
-├── banco.db
-├── conexao.php
-│
-├── index.php
-├── login.php
-├── logout.php
-│
-├── cadastrar.php
-├── perfil.php
-├── editar_usuario.php
-├── excluir_usuario.php
-│
-├── catalogo.php
-├── jogo.php
-│
-├── css/
-│   └── style.css
+PROJETO-FINAL-PHP/
+├── CSS
+|    └── cadastro.css
+│    └── index.css
+|    └── login.css
+│    └── perfil.css
+|
+├── HTML
+│    └── cadastro.php
+|    └── index.php
+│    └── login.php
+|    └── perfil.php
+|   
+├── PHP
+|    └── cadastrar.php
+|    └── cadastro.php
+|    └── conexao.php
+|    └── login.php
+|    └── script-index.php
 │
 └── imagens/
 ```
