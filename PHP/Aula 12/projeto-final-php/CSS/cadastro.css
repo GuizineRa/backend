@@ -34,28 +34,41 @@ header{
 
     padding:0 40px;
 
-    position:relative;
+    position: relative;
+}
+
+.header-logo{
+
+    width:300px;
+
+    display:flex;
+    align-items:center;
 }
 
 .logo{
 
-    height: 300px;px;
+    height:100px;
+    width:auto;
 }
 
-header h1{
+.header-title{
 
     position:absolute;
 
     left:50%;
+
     transform:translateX(-50%);
+}
+
+.header-title h1{
 
     color:#d9d9d9;
 
     font-size:32px;
     font-weight:normal;
-    font-family: 'Rajdhani', sans-serif;
-}
 
+   font-family: 'Exo 2', sans-serif;
+}
 /* MAIN */
 
 main{

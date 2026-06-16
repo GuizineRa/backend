@@ -1,0 +1,204 @@
+/* RESET */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+
+    min-height:100vh;
+
+    display:flex;
+    flex-direction:column;
+
+    font-family:'Rajdhani', sans-serif;
+
+    background:#16314f;
+}
+
+/* HEADER */
+
+header{
+
+    height:120px;
+
+    background:#222222;
+
+    display:flex;
+    align-items:center;
+
+    padding:0 40px;
+
+    position:relative;
+}
+
+.logo{
+
+    height:100px;
+    width:auto;
+}
+
+.header-title{
+
+    position:absolute;
+
+    left:50%;
+    transform:translateX(-50%);
+}
+
+.header-title h1{
+
+    color:#d9d9d9;
+
+    font-size:32px;
+    font-weight:500;
+}
+
+/* NAVBAR */
+
+nav{
+
+    height:65px;
+
+    background:#4a5676;
+
+    display:flex;
+
+    justify-content:space-between;
+    align-items:center;
+
+    padding:0 40px;
+}
+
+.menu-esquerda{
+
+    display:flex;
+    gap:40px;
+}
+
+.menu-esquerda a{
+
+    color:white;
+
+    text-decoration:none;
+
+    font-size:24px;
+}
+
+.menu-direita{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:15px;
+}
+
+.menu-direita span{
+
+    color:white;
+}
+
+.menu-direita input{
+
+    width:280px;
+    height:40px;
+
+    border:none;
+
+    border-radius:10px;
+
+    background:#7b6e6e;
+
+    padding:0 15px;
+
+    color:white;
+}
+
+.menu-direita input::placeholder{
+
+    color:#d8d8d8;
+}
+
+.menu-direita button{
+
+    background:none;
+
+    border:none;
+
+    color:white;
+
+    font-size:30px;
+
+    cursor:pointer;
+}
+
+/* MAIN */
+
+main{
+
+    flex:1;
+
+    background:#18324f;
+
+    padding:30px;
+}
+
+/* BANNER */
+
+.banner-principal{
+
+    width:100%;
+
+    height:220px;
+
+    background:#d9d9d9;
+
+    margin-bottom:40px;
+
+    border:1px solid #999;
+}
+
+/* JOGOS */
+
+.jogos-grid{
+
+    display:flex;
+
+    justify-content:space-around;
+
+    flex-wrap:wrap;
+
+    gap:30px;
+}
+
+.jogo-card{
+
+    width:250px;
+    height:250px;
+
+    background:#d9d9d9;
+
+    border:1px solid #999;
+}
+
+/* FOOTER */
+
+footer{
+
+    height:80px;
+
+    background:#222222;
+
+    display:flex;
+
+    justify-content:center;
+    align-items:center;
+}
+
+.footer-logo{
+
+    height:55px;
+}
