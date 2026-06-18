@@ -24,7 +24,7 @@ $usuario = $stmt->fetch(PDO::FETCH_ASSOC);
 
 
 if ($usuario) {
-    if ($senha == $usuario["senha"]) {
+    if ($senha == $usuario["senha_hash"]) {
 
 
         $_SESSION["usuario"] = $usuario["nome"];

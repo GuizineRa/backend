@@ -42,16 +42,27 @@ if (!isset($_SESSION["usuario"])) {
         <div class="cadastro-box">
             <h2>Editar Perfil</h2>
             
-            <form class="cadastro-form" action="" method="POST">
-                <input type="text" placeholder="Novo nome de usuário...">
-                <input type="email" placeholder="Novo e-mail...">
-                <input type="password" placeholder="Nova senha...">
-                <input type="password" placeholder="Confirmar nova senha...">
-                
+            <form class="cadastro-form" action="../PHP/alterar.php" method="POST">
+
+                <input type="text" name="nome" placeholder="Novo nome de usuário...">
+
+                <input type="email" name="email" placeholder="Novo e-mail...">
+
+                <input type="password" name="senha" placeholder="Nova senha...">
+
+                <input type="password" name="confirmar_senha" placeholder="Confirmar nova senha...">
+
                 <button type="submit">Salvar Alterações</button>
+
             </form>
 
-            <button class="btn-excluir">Excluir Conta</button>
+            <form action="../PHP/deletar.php" method="POST">
+
+                <button type="submit" class="btn-excluir">
+                    Excluir Conta
+                </button>
+
+            </form>
         </div>
     </main>
 
