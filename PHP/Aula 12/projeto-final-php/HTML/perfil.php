@@ -1,3 +1,14 @@
+<?php
+
+session_start();
+
+if (!isset($_SESSION["usuario"])) {
+    header("Location: cadastro.html");
+    exit();
+} 
+?>
+
+
 <!DOCTYPE html>
 <html lang="pt">
 <head>

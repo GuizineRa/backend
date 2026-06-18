@@ -24,27 +24,28 @@ $senhaHash = password_hash($senha, PASSWORD_DEFAULT);
 
 
 
-$sql = "INSERT INTO usuarios (nome, email, senha)
+$sql = "INSERT INTO usuarios (nome, email, senha_hash)
         VALUES (:nome, :email, :senha)";
 
 
 $stmt = $pdo->prepare($sql);
 
-
-$stmt->bindParam(":nome", $nome);
-$stmt->bindParam(":email", $email);
-$stmt->bindParam(":senha", $senhaHash);
-
-
-if ($stmt->execute()) {
+try {
+    $stmt->execute(
+        [
+            'nome'=> $nome,
+            'email'=> $email,
+            'senha'=> $senha
+        ]
+    );
 
     $_SESSION["usuario"] = $nome;
-$_SESSION["email"] = $email;
+    $_SESSION["email"] = $email;
 
-header("Location: home.php");
-exit;
+    header("Location: ../HTML/login.php");
+    exit;
 
-} else {
+} catch (PDOException $e) {
 
     echo "Erro ao cadastrar.";
 

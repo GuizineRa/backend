@@ -19,20 +19,20 @@ O projeto tem como objetivo aplicar os conceitos de desenvolvimento web estudado
 A STEAM permite que usuários criem uma conta, realizem autenticação e acessem um catálogo de jogos disponível, no qual o usuário pode baixar/instalar jogos, apenas para usuários cadastrados.
 
 ---
-# 2.1 Como utilizar
+# 3.0 Como utilizar
 
-## 1. Clonar o repositório
+## 3.1 Clonar o repositório
 
 Primeiro, clone o repositório do projeto.
 
-No GitHub, clique no botão verde **Code**, selecione a opção **HTTPS** e copie o link.
+No GitHub a paritir deste link https://github.com/GuizineRa/backend, clique no botão verde **Code**, selecione a opção **HTTPS** e copie o link.
 
 Abra o terminal do VS Code na pasta onde deseja salvar o projeto e execute:
 git clone URL-copiada
 
 * Após isso você digita o seguinte comando: git clone [URL-copiada], fazendo com que o meu repositório seja clonado para o seu PC
 
-## 2. Banco de dados
+## 3.2 Banco de dados
 * Após isso você deve criar o banco de dados, para isso vc deve ter instalado o postgreSQL em seu computador, Digite no BD, CREATE DATABASE e coloque o nome do seu banco (Selecione e aperte "Run query"),
 ```sql
 CREATE TABLE usuarios (
@@ -56,7 +56,7 @@ Inicine o servidor PHP e abra o navegador
 
 
 
-# 3. Escopo
+# 4.0 Escopo
 
 O sistema será composto por duas áreas principais.
 
@@ -75,7 +75,7 @@ O sistema será composto por duas áreas principais.
 
 ---
 
-# 4. Tecnologias Utilizadas
+# 5.0 Tecnologias Utilizadas
 
 - PHP 8+
 - postgreSQL
@@ -86,7 +86,7 @@ O sistema será composto por duas áreas principais.
 
 ---
 
-# 5. Requisitos Funcionais
+# 6.0 Requisitos Funcionais
 
 ## RF01
 
@@ -146,7 +146,7 @@ O sistema deve possuir organização modular dos arquivos.
 
 ---
 
-# 7. Casos de Uso
+# 8.0 Casos de Uso
 
 ## Ator Principal
 
@@ -164,7 +164,7 @@ O sistema deve possuir organização modular dos arquivos.
 
 ---
 
-# 8. Diagrama de Casos de Uso
+# 9.0 Diagrama de Casos de Uso
 
 ```mermaid
 flowchart LR
@@ -190,7 +190,7 @@ Usuario --> UC7
 
 ---
 
-# 9. Modelo Entidade-Relacionamento
+# 10.0 Modelo Entidade-Relacionamento
 
 ```mermaid
 erDiagram
@@ -215,7 +215,7 @@ JOGOS {
 
 ---
 
-# 10. Banco de Dados
+# 11.0 Banco de Dados
 
 ## Tabela usuarios
 
@@ -230,7 +230,7 @@ CREATE TABLE usuarios (
 
 ---
 
-# 11. Estrutura de Arquivos
+# 12.0 Estrutura de Arquivos
 
 ```text
 PROJETO-FINAL-PHP/
@@ -258,7 +258,7 @@ PROJETO-FINAL-PHP/
 
 ---
 
-# 12. Operações CRUD
+# 13.0 Operações CRUD
 
 ## CREATE
 
@@ -298,7 +298,7 @@ WHERE id = ?;
 
 ---
 
-# 13. Fluxo de Navegação
+# 14.0 Fluxo de Navegação
 
 ```mermaid
 flowchart TD
@@ -326,7 +326,7 @@ Perfil --> Excluir
 
 ---
 
-# 14. Segurança
+# 15.0 Segurança
 
 As seguintes práticas serão utilizadas:
 
@@ -339,7 +339,7 @@ As seguintes práticas serão utilizadas:
 
 ---
 
-# 15. Checklist dos Requisitos da Atividade
+# 16.0 Checklist dos Requisitos da Atividade
 
 | Requisito | Status |
 |------------|---------|
@@ -356,7 +356,7 @@ As seguintes práticas serão utilizadas:
 
 ---
 
-# 16. Possíveis Melhorias Futuras
+# 17.0 Possíveis Melhorias Futuras
 
 - Sistema de favoritos.
 - Biblioteca de jogos do usuário.
@@ -367,3 +367,6 @@ As seguintes práticas serão utilizadas:
 
 ---
 
+# 18.0 Protótipo do projeto criado no figma
+
+https://www.figma.com/design/08rbjdcqau0X0ajkCM1WL4/Steam?node-id=6-38&t=8NOrg2aqM20zZaQK-1

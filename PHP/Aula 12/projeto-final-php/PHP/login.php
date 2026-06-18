@@ -24,16 +24,14 @@ $usuario = $stmt->fetch(PDO::FETCH_ASSOC);
 
 
 if ($usuario) {
-
-
-    if (password_verify($senha, $usuario["senha"])) {
+    if ($senha == $usuario["senha"]) {
 
 
         $_SESSION["usuario"] = $usuario["nome"];
         $_SESSION["id_usuario"] = $usuario["id"];
 
 
-        header("Location: index.php");
+        header("Location: ../HTML/index.php");
         exit;
 
 

@@ -34,25 +34,25 @@
 
             <h2>Cadastre-se</h2>
 
-           <form action="login.php" method="POST">
+           <form action="../PHP/cadastrar.php" method="POST">
 
-    <label>Nome:</label>
-    <input type="text" name="nome">
+                <label>Nome:</label>
+                <input type="text" name="nome">
 
-    <label>Email:</label>
-    <input type="email" name="email">
+                <label>Email:</label>
+                <input type="email" name="email">
 
-    <label>Senha:</label>
-    <input type="password" name="senha">
+                <label>Senha:</label>
+                <input type="password" name="senha">
 
-    <label>Confirmar senha:</label>
-    <input type="password" name="confirmar">
+                <label>Confirmar senha:</label>
+                <input type="password" name="confirmar">
 
-    <button type="submit">
-        Cadastrar
-    </button>
+                <button type="submit">
+                    Cadastrar
+                </button>
 
-</form>
+            </form>
 
         </div>
 
